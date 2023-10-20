@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <title>TheNetNinja Angular Playlist</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="app/angular.min.js"></script>
+  </head>
+  <body>
+
+    <!--2 way data binding-->
+    <input type="text" ng-model="song" placeholder="favsong"/>
+    <p>your fav song is {{song}}</p>
+
+
+    <!--expressions-->
+<p ng-init="number=[1,2,3,4,5]">
+  <p>{{number[2]+number[0]}}</p>
+</p>
+
+<p ng-init="colors=['red','yellow','green']">
+<p>your fav colour is : {{colors[1]}}</p>
+</p>
+
+<p ng-init="color='orange'">
+  <p class="{{color}}">hello world</p>
+</p>
+  </body>
+</html>
